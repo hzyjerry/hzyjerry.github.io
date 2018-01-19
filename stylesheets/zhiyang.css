@@ -5,3 +5,38 @@
 img.personal {
 	margin-bottom: 6px
 }
+
+.hiddenimg {
+  display: none;
+}
+
+.hiddenimg img {
+	width: 85%;
+}
+
+.hiddentxt {
+}
+
+.hiddentxt a {
+  text-decoration: none;
+}
+
+.hiddenclick {
+  color: #F00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hiddenclick a {
+  color: #F00;
+  text-decoration: none;
+}
+
+.hiddenclick a:visited {
+  color: #F00;
+  text-decoration: none;
+}
+
+.hiddentxt:hover ~ .hiddenimg {
+  display: block;
+}
