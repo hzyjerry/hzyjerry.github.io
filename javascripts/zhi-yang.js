@@ -1,4 +1,4 @@
-    function vidPlay() {  
+function vidPlay() {  
     video1.play();  
 } 
 function vidPause() {

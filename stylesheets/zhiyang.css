@@ -37,6 +37,10 @@ img.personal {
   text-decoration: none;
 }
 
-.hiddentxt:hover ~ .hiddenimg {
+.right:hover ~ .hiddenimg {
   display: block;
+}
+
+section.main {
+  float: right;
 }

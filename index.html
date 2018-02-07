@@ -27,63 +27,65 @@
           <li><a href="https://twitter.com/hzyjerry">I also use <strong>Twitter</strong></a></li>
         </ul>
       </header>
-      <section>
-        <h1>Education</h1> 
-        <a name="education"></a>
-          <div class="media">
-              <span class="pull-left"><img src="public/stanford.png" width="75px" height="75px"></span>
-              <div class="media-body">
-                <p>
-                  <b>Stanford University</b>
-                  <br/>
-                  <i>Sep. 2014 - Present</i>, Computer Science B.S., Electrical Engineering Minor
-                <br/> Major GPA: 3.97/4.00, Overall: 3.87/4.00
-                </p>
-              </div>
-          </div>
-          <p> In the past I worked at: <a href="https://www.mulesoft.com/">MuleSoft</a> (intern; 2016) and <a href="mobisocial.stanford.edu">Stanford Mobisocial Lab</a> with Prof. Monica Lam (research assistant; 2015).</p>
-        <h1>Publications</h1>
-        <ul>
-          <span class="hiddentxt">
+      <section class="main" onmouseover="mouseOver()" onmouseout="mouseOut()">
+        <section>
+          <h1>Education</h1> 
+          <a name="education"></a>
+            <div class="media">
+                <span class="pull-left"><img src="public/stanford.png" width="75px" height="75px"></span>
+                <div class="media-body">
+                  <p>
+                    <b>Stanford University</b>
+                    <br/>
+                    <i>Sep. 2014 - Present</i>, Computer Science B.S., Electrical Engineering Minor
+                  <br/> Major GPA: 3.97/4.00, Overall: 3.87/4.00
+                  </p>
+                </div>
+            </div>
+            <p> In the past I worked at: <a href="https://www.mulesoft.com/">MuleSoft</a> (intern; 2016) and <a href="mobisocial.stanford.edu">Stanford Mobisocial Lab</a> with Prof. Monica Lam (research assistant; 2015).</p>
+          <h1>Publications</h1>
+          <ul>
+            <span class="hiddentxt">
+              <li>
+                <a href="http://gibson.vision">Embodied Real-World Active Perception</a>
+                </br>
+                Zhiyang He*, Fei Xia*, Amir Zamir*, Alexander Sax, Silvio Savarese, Jitendra Malik
+                </br>
+                CVPR 2018 (in submission)
+                </br>
+                [ <a href="http://gibson.vision">Website</a> | <a href="http://gibson.vision">Code</a> | Paper coming soon ]
+              </li>
+            </span>
+            <span class="hiddenimg"><img src="public/gibson1.jpg" /></span>
+            </span>
+          </ul>
+          <h1>Selected Projects</h1>
+          <ul>
+            <span class="hiddentxt">
+              <li>
+                <a href="http://gibson.vision">Gibson Environment for Real-World Active Perception</a>
+                </br>
+                Open-sourced simulation platform for reinforcement learning.
+                </br>
+                [ <a href="http://gibson.vision">Website</a> | <a href="http://gibson.vision">Code</a> | Paper coming soon ]
+                </br>
+              </li>
+            </span>
+            <span class="hiddenimg"><img src="public/gibson2.jpg" /></span>
             <li>
-              <a href="http://gibson.vision">Embodied Real-World Active Perception</a>
+              <a href="http://www.thingpedia.org/">ThingPedia</a>
               </br>
-              Zhiyang He*, Fei Xia*, Amir Zamir*, Alexander Sax, Silvio Savarese, Jitendra Malik
+              Opensource Platform For Personal Internet of Things 
               </br>
-              CVPR 2018 (in submission)
-              </br>
-              [ <a href="http://gibson.vision">Website</a> | <a href="http://gibson.vision">Code</a> | Paper coming soon ]
+              Summer research with Prof. Monica Lam
             </li>
-          </span>
-          <span class="hiddenimg"><img src="public/gibson1.jpg" /></span>
-          </span>
-        </ul>
-        <h1>Selected Projects</h1>
-        <ul>
-          <span class="hiddentxt">
             <li>
-              <a href="http://gibson.vision">Gibson Environment for Real-World Active Perception</a>
+              <a href="#">Unifile</a>
               </br>
-              Open-sourced simulation platform for reinforcement learning.
-              </br>
-              [ <a href="http://gibson.vision">Website</a> | <a href="http://gibson.vision">Code</a> | Paper coming soon ]
-              </br>
+              Semantic File Navigation System, CS 294S class project
             </li>
-          </span>
-          <span class="hiddenimg"><img src="public/gibson2.jpg" /></span>
-          <li>
-            <a href="http://www.thingpedia.org/">ThingPedia</a>
-            </br>
-            Opensource Platform For Personal Internet of Things 
-            </br>
-            Summer research with Prof. Monica Lam
-          </li>
-          <li>
-            <a href="#">Unifile</a>
-            </br>
-            Semantic File Navigation System, CS 294S class project
-          </li>
-        </ul>
+          </ul>
+        </section>
       </section>
       <footer>
         <p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
@@ -91,5 +93,21 @@
     </div>
     <script src="javascripts/scale.fix.js"></script>
     <script src="javascripts/zhi-yang.js"></script>
+    <script>
+      function mouseOver() {
+          var els = document.getElementsByClassName("hiddenimg");
+
+          Array.prototype.forEach.call(els, function(element) {
+              element.style.display = "block";
+            });
+      }
+
+      function mouseOut() {
+          var els = document.getElementsByClassName("hiddenimg");
+          Array.prototype.forEach.call(els, function(element) {
+              element.style.display = "none";
+            });
+      }
+    </script>
   </body>
 </html>
