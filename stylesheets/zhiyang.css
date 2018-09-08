@@ -1,3 +1,11 @@
+a {
+  color:#542217;
+ }
+
+a:hover {
+  color:#903941;
+}
+
 .media-body {
 	padding-left: 10px
 }
