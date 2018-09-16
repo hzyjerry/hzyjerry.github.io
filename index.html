@@ -6,6 +6,7 @@
     <title>Jerry (Zhi-Yang) He, Welcome to my homepage</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/zhiyang.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -16,10 +17,11 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header class="clearfix">
         <h4>Jerry (Zhi-Yang) He</h4>
         <p>Publish under <b>Zhi-Yang He</b></p>
-        <p>hzyjerry at stanford edu <a href="https://www.dropbox.com/s/728xqqh4vai2d3p/Zhiyang%20He%20C.V.%2020180620.pdf?dl=0"><b>[CV]</b></a></p>
+        <p>hzyjerry at stanford edu <br/>
+        <a href="https://www.dropbox.com/s/728xqqh4vai2d3p/Zhiyang%20He%20C.V.%2020180620.pdf?dl=0">[CV]</a><a href="https://www.dropbox.com/s/728xqqh4vai2d3p/Zhiyang%20He%20C.V.%2020180620.pdf?dl=0">[Google Scholar]</a></p>
         <!--p>I go by Jerry, publish under Zhi-Yang He</p-->
         <img class="personal" src="public/zhiyang.png"/>
         <p class="view">I am a <a href="http://exploredegrees.stanford.edu/cotermdegrees/">coterm </a> student at Stanford. My interests are building safe and reliable robotic system that can work in the complex real world. I work closely with <a href="http://cvgl.stanford.edu/silvio/">Prof. Silvio Savarese</a>, <a href="https://cs.stanford.edu/~amirz/"> Dr. Amir Zamir</a> and <a href="http://dorsa.fyi/">Prof. Dorsa Sadigh</a> at <a href="http://svl.stanford.edu/home">Stanford SVL</a> and <a href="https://dorsa.fyi/research-group/">ILIAD</a></p>
@@ -29,7 +31,7 @@
           <li><a href="https://twitter.com/hzyjerry">I also use <strong>Twitter</strong></a></li>
         </ul>
       </header>
-      <section class="main" onmouseover="mouseOver()" onmouseout="mouseOut()">
+      <section class="main">
         <section>
           <h1>Education</h1> 
           <a name="education"></a>
@@ -46,71 +48,55 @@
                   </p>
                 </div>
             </div>
-            <p style="margin:0 0 0 0"> In the past I had the luck to work at: <a href="http://svl.stanford.edu/home"> Stanford Vision and Learning Lab </a> (RA; 2017-2018) mentored by <a href="http://cvgl.stanford.edu/silvio/">Prof. Silvio Savarese</a> and <a href="https://cs.stanford.edu/~amirz/">Dr. Amir Zamir</a>, at <a href="https://www.mulesoft.com/">MuleSoft</a> (intern; 2016) mentored by <a href="https://www.linkedin.com/in/waiip/">Wai Ip</a> and at <a href="mobisocial.stanford.edu">Stanford Mobisocial Lab</a> (RA; 2015) mentored by <a href="https://suif.stanford.edu/~lam/">Prof. Monica Lam </a> and <a href="http://bdsl.hanyang.ac.kr/members/jiwonseo">Prof. Jiwon Seo</a>.</p>
+            <p style="margin:0 0 0 0"> In the past I had the luck to work at: <a href="http://svl.stanford.edu/home"> Stanford Vision and Learning Lab </a> (RA; 2017-2018) mentored by <a href="http://cvgl.stanford.edu/silvio/">Prof. Silvio Savarese</a> and <a href="https://cs.stanford.edu/~amirz/">Dr. Amir Zamir</a>, at <a href="https://www.mulesoft.com/">MuleSoft</a> (intern; 2016) mentored by <a href="https://www.linkedin.com/in/waiip/">Wai Ip</a> and at <a href="http://mobisocial.stanford.edu">Stanford Mobisocial Lab</a> (RA; 2015) mentored by <a href="https://suif.stanford.edu/~lam/">Prof. Monica Lam </a> and <a href="http://bdsl.hanyang.ac.kr/members/jiwonseo">Prof. Jiwon Seo</a>.</p>
             <p style="font-size: 17px; font-weight: 450;color:rgb(180,0,0)">News:
             <ul>
-              <span class="hiddentxt">
-                <li>
-                  2018.9 I will be leading Course Assistant for <a href="https://dorsa.fyi/cs333/">CS333: Safe and Interactive Robotics</a> in Fall. 
-                </li>
-                <li>
-                  2018.8 <i>Gibson Environment</i> is at public release on <a href="https://github.com/StanfordVL/GibsonEnv">github</a>. 
-                </li>
-                <li>
-                  2018.6 <i>Gibson Environment</i> won <b>2018 NVIDIA Pioneering Research Award</b>. 
-                </li>
-                <li>
-                  2018.2 Paper <i>Gibson Env: Real-World Perception for Embodied Agents</i> is accepted to CVPR 2018 as spotlight. 
-                </li>
-              </span>
+              <li class="hiddentxt">
+                2018.9 I will be leading Course Assistant for <a href="https://dorsa.fyi/cs333/">CS333: Safe and Interactive Robotics</a> in Fall. 
+              </li>
+              <li class="hiddentxt">
+                2018.8 <i>Gibson Environment</i> is at public release on <a href="https://github.com/StanfordVL/GibsonEnv">github</a>. 
+              </li>
+              <li class="hiddentxt">
+                2018.6 <i>Gibson Environment</i> won <a href="http://zhi-yang.me">2018 NVIDIA Pioneering Research Award</a>. 
+              </li>
             </ul>
             </p>
           <h1>Publications</h1>
           <ul>
-            <span class="hiddentxt">
-              <li>
-                <a href="http://gibson.vision">Gibson Env: Real-World Perception for Embodied Agents</a>
-                </br>
-                Fei Xia*, Amir Zamir*, <b>Zhi-Yang He*</b>, Alexander Sax, Silvio Savarese, Jitendra Malik
-                </br>
-                CVPR 2018 (Spotlight)
-                </br>
-                [ <a href="http://gibson.vision">Website</a> | <a href="https://github.com/StanfordVL/GibsonEnv">Code</a> | <a href="https://arxiv.org/abs/1808.10654">Paper</a> ]
-              </li>
-            </span>
-            <span class="hiddenimg"><img src="public/gibson1.png" /></span>
+            <li class="hiddentxt" onmouseover="slideDown(this)">
+              <a href="http://gibson.vision">Gibson Env: Real-World Perception for Embodied Agents</a> (CVPR 2018 Spotlight)
+              </br>
+              Fei Xia*, Amir Zamir*, <b>Zhi-Yang He*</b>, Alexander Sax, Silvio Savarese, Jitendra Malik
+              </br>
+              [ <a href="http://gibson.vision">Website</a> | <a href="https://github.com/StanfordVL/GibsonEnv">Code</a> | <a href="https://arxiv.org/abs/1808.10654">Paper</a> ]
+              <img class="hiddenimg hide" src="public/gibson1.png" />
+            </li>
             </span>
           </ul>
           <h1>Selected Projects</h1>
-          <ul>
-            <span class="hiddentxt">
-              <li>
-                <a href="http://gibson.vision">Gibson Environment</a>
-                </br>
-                Open-sourced simulation platform for Real-World Active Perception Learning. Currently at beta release. I am one of the top contributors.
-                </br>
-                [ <a href="http://gibson.vision">Website</a> | <a href="https://github.com/StanfordVL/GibsonEnv">Code</a> | <a href="https://arxiv.org/abs/1808.10654">Paper</a> ]
-                </br>
-              </li>
-            </span>
-            <span class="hiddenimg"><img src="public/gibson2.jpg" /></span>
-            <li>
+          <ul class="hiddentxt">
+            <li onmouseover="slideDown(this)">
+              <a href="http://gibson.vision">Gibson Environment</a>
+              </br>
+              I co-led the development of a simulation platform for Real-World Active Perception Learning.
+              </br>
+              [ <a href="http://gibson.vision">Website</a> | <a href="https://github.com/StanfordVL/GibsonEnv">Code</a> | <a href="https://arxiv.org/abs/1808.10654">Paper</a> ]
+              <img class="hiddenimg hide" src="public/gibson2.jpg" />
+            </li>
+            <li onmouseover="slideDown(this)">
               <a href="http://www.thingpedia.org/">ThingPedia</a>
               </br>
-              Opens-ource Platform For Personal Internet of Things 
-              </br>
+              Opens-ource Platform For Personalized Internet of Things 
               Summer research with Prof. Monica Lam
+              <img class="hiddenimg hide" src="public/thingpedia.jpg" />
             </li>
-            </span>
-            <span class="hiddenimg"><img src="public/thingpedia.jpg" /></span>
-            </span>
-          </ul>
-          <ul>
-            <li>
+            <li onmouseover="slideDown(this)">
               <a href="#">Unifile</a>
               </br>
               Semantic File Navigation System, CS 294S class project
             </li>
+            <img class="filler" src="public/thingpedia.jpg" />
           </ul>
         </section>
       </section>
@@ -121,9 +107,11 @@
     <script src="javascripts/scale.fix.js"></script>
     <script src="javascripts/zhi-yang.js"></script>
     <script>
+
+      var can_expand = false;
+
       function mouseOver() {
           var els = document.getElementsByClassName("hiddenimg");
-
           Array.prototype.forEach.call(els, function(element) {
               element.style.display = "block";
             });
@@ -135,6 +123,68 @@
               element.style.display = "none";
             });
       }
+
+
+      function slideUp() {
+        // Hide elements, also scroll back to top
+        var els = $(".hiddenimg");
+        if (!els.hasClass('hide')) {
+          els.addClass('hide');
+        }
+
+        $('html, body').animate({
+          scrollTop: 0
+        }, 50);
+        resize_filler_img();
+      }
+
+      function slideDown(li_element) {
+        var els = $(".hiddenimg");
+        // Expand and scroll to element
+        var old_offset = li_element.offsetTop;
+        var align_pos = 500;
+        if (els.hasClass('hide')) {
+          els.removeClass('hide')
+          .slideDown(10, function () {
+            if (els.last().is(this)){
+              $('html, body').animate({
+                scrollTop: li_element.offsetTop - align_pos
+              }, 100);
+            }
+          });
+        }
+      }
+
+      // Resize filler image
+      function resize_filler_img() {
+        var filler_height = $("img.filler").position().top;
+        var diff_height = $( window ).height() - filler_height;
+        $('img.filler').height(diff_height);
+      }
+
+
+
+      last_mouseX = 0;
+      last_mainX = 1;
+
+      resize_filler_img()
+      // Main loop, detect if mouse over right section
+      $( document ).on( "mousemove", function( mouseevent ) {
+        var mouseX = mouseevent.pageX;
+        var mainX = $("section.main").position().left;
+
+        if (last_mouseX < last_mainX && mouseX > mainX) {
+          can_expand = true;
+        }
+        if (last_mouseX > last_mainX && mouseX < mainX) {
+          slideUp()
+          expanded = false;
+        }
+
+        last_mouseX = mouseX;
+        last_mainX = mainX;
+      });
+
     </script>
     <!-- Default Statcounter code for Personal
     http://zhi-yang.me -->
