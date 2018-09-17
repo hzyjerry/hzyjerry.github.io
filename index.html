@@ -14,7 +14,19 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
+
+  <button type="button" class="hide-button botton-up btn btn-danger btn-circle"><i class="fa fa-angle-up"></i></button>
+  <button type="button" class="botton-down btn btn-danger btn-circle"><i class="fa fa-angle-down"></i></button>
+
+
   <body>
     <div class="wrapper">
       <header class="clearfix">
@@ -126,6 +138,7 @@
 
 
       function slideUp() {
+        showButtonDown()
         // Hide elements, also scroll back to top
         var els = $(".hiddenimg");
         if (!els.hasClass('hide')) {
@@ -139,21 +152,43 @@
       }
 
       function slideDown(li_element) {
+        showButtonUp()
         var els = $(".hiddenimg");
         // Expand and scroll to element
-        var old_offset = li_element.offsetTop;
-        var align_pos = 500;
+        var scroll_diff = 0;
+        if (li_element != []) {
+          var old_offset = li_element.offsetTop;
+          var align_pos = 500;
+          scroll_diff = li_element.offsetTop - align_pos;
+        }
         if (els.hasClass('hide')) {
           els.removeClass('hide')
           .slideDown(10, function () {
             if (els.last().is(this)){
               $('html, body').animate({
-                scrollTop: li_element.offsetTop - align_pos
+                scrollTop: scroll_diff
               }, 100);
             }
           });
         }
       }
+
+      function showButtonUp() {
+        $(".botton-up").removeClass('hide-button')
+        $(".botton-down").addClass('hide-button')
+      }
+
+      function showButtonDown() {
+        $(".botton-down").removeClass('hide-button')
+        $(".botton-up").addClass('hide-button')        
+      }
+
+      $(".botton-down").click(function () {
+        slideDown([])
+      })
+      $(".botton-up").click(function () {
+        slideUp()
+      })
 
       // Resize filler image
       function resize_filler_img() {
@@ -166,6 +201,7 @@
 
       last_mouseX = 0;
       last_mainX = 1;
+
 
       resize_filler_img()
       // Main loop, detect if mouse over right section
