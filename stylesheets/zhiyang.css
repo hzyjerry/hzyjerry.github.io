@@ -1,39 +1,43 @@
-/* ---- Tokens ---- */
+/* ---- Tokens (slate + warm-orange palette) ---- */
 :root {
-  --ink: #1a1a1a;
-  --body: #444;
-  --muted: #909090;
-  --rule: #eaeaea;
-  --accent: #6e2a2a;
-  --accent-hover: #9a3838;
-  --bg: #fbfaf7;
-  --venue: #a0a0a0;
-  --tag-bg: #f1ede8;
-  --tag-fg: #5a4a3a;
+  --ink: #1c2128;
+  --body: #3e4750;
+  --muted: #8a949c;
+  --rule: #e3e6ea;
+  --accent: #b85a1e;
+  --accent-hover: #d27536;
+  --bg: #f7f8fa;
+  --venue: #9aa3ab;
+  --tag-bg: #ebeef2;
+  --tag-fg: #4a5560;
+  --highlight: #b85a1e;
 }
 
 /* ---- Base ---- */
 body {
   background-color: var(--bg);
   color: var(--body);
-  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  padding: 60px 50px;
+  padding: 40px;
 }
 
 h1, h2, h3, h4 {
   color: var(--ink);
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
 }
 
 h1 {
-  font-size: 22px;
-  margin: 36px 0 14px;
-  padding-bottom: 6px;
+  font-size: 20px;
+  margin: 0 0 8px;
+  padding-bottom: 4px;
   border-bottom: 1px solid var(--rule);
 }
+
+section.main > section { margin-top: 4px; }
+section.main > section:first-child { margin-top: 0; }
 
 a {
   color: var(--accent);
@@ -52,46 +56,49 @@ a.muted, a.muted:hover {
   border-bottom-color: transparent;
 }
 
-p { margin: 0 0 14px; }
+p { margin: 0 0 8px; }
+p:last-child { margin-bottom: 0; }
+
+b { color: var(--ink); }
 
 /* ---- Header (sidebar) ---- */
 header h4 {
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 600;
   color: var(--ink);
-  margin: 0 0 4px;
+  margin: 0 0 2px;
 }
 
 header .byline {
   color: var(--muted);
-  font-size: 13px;
-  margin-bottom: 14px;
+  font-size: 12.5px;
+  margin-bottom: 12px;
 }
 
 img.personal {
   width: 100%;
   max-width: 220px;
   border-radius: 4px;
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   display: block;
 }
 
 header .contact {
-  font-size: 14px;
+  font-size: 13.5px;
   color: var(--body);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 header .contact .at {
   color: var(--muted);
   font-style: italic;
-  font-size: 12px;
+  font-size: 11.5px;
 }
 
 ul.links {
   list-style: none;
   padding: 0;
-  margin: 0 0 18px;
+  margin: 0 0 14px;
   display: block;
   height: auto;
   background: transparent;
@@ -104,8 +111,8 @@ ul.links li {
   float: none;
   border: none;
   height: auto;
-  font-size: 14px;
-  margin: 4px 0;
+  font-size: 13.5px;
+  margin: 2px 0;
 }
 
 ul.links a {
@@ -114,37 +121,36 @@ ul.links a {
   padding: 0;
   text-align: left;
   height: auto;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 13.5px;
+  line-height: 1.45;
 }
 
-ul.links a:hover {
-  color: var(--accent);
-}
+ul.links a:hover { color: var(--accent); }
 
 ul.links i {
-  width: 18px;
+  width: 16px;
   color: var(--muted);
   margin-right: 4px;
+  font-size: 13px;
 }
 
 header .view {
-  font-size: 14px;
+  font-size: 13.5px;
   color: var(--body);
-  margin-top: 8px;
-  line-height: 1.55;
+  margin-top: 6px;
+  line-height: 1.5;
 }
 
 /* ---- Main ---- */
 section.main { float: right; }
 
 section.main > section {
-  margin-bottom: 6px;
+  margin-bottom: 0;
 }
 
 section.main p {
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: 14.5px;
+  line-height: 1.6;
 }
 
 /* ---- News list ---- */
@@ -152,12 +158,13 @@ ul.news {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 ul.news li {
-  padding: 6px 0;
+  padding: 3px 0;
   border-bottom: 1px dashed var(--rule);
+  line-height: 1.45;
 }
 
 ul.news li:last-child { border-bottom: none; }
@@ -166,15 +173,15 @@ ul.news .date {
   display: inline-block;
   width: 80px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 12.5px;
   font-variant-numeric: tabular-nums;
 }
 
-/* ---- Publications ---- */
+/* ---- Publications / tech reports ---- */
 .hint {
-  font-size: 13px;
+  font-size: 12.5px;
   color: var(--muted);
-  margin-bottom: 16px;
+  margin: 2px 0 4px;
 }
 
 ul.pubs {
@@ -184,36 +191,34 @@ ul.pubs {
 }
 
 ul.pubs li {
-  padding: 12px 0 14px;
+  padding: 5px 0 6px;
   border-bottom: 1px solid var(--rule);
   position: relative;
-  padding-left: 60px;
-  min-height: 50px;
+  padding-left: 56px;
+  min-height: 0;
 }
 
-ul.pubs li:last-child { border-bottom: none; }
+ul.pubs li:last-child { border-bottom: none; padding-bottom: 0; }
 
 ul.pubs .venue {
   position: absolute;
   left: 0;
-  top: 15px;
-  width: 48px;
+  top: 7px;
+  width: 44px;
   text-align: left;
   font-size: 12px;
   font-weight: 400;
   color: var(--venue);
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0;
-  text-transform: none;
 }
 
 ul.pubs a.title {
   display: block;
-  font-size: 15.5px;
+  font-size: 14.5px;
   font-weight: 500;
   color: var(--ink);
-  line-height: 1.4;
-  margin-bottom: 4px;
+  line-height: 1.35;
+  margin-bottom: 1px;
 }
 
 ul.pubs a.title:hover {
@@ -232,29 +237,30 @@ ul.pubs a.muted-link:hover {
 }
 
 ul.pubs .authors {
-  display: block;
-  font-size: 13.5px;
+  display: inline;
+  font-size: 13px;
   color: var(--body);
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 ul.pubs .venue-inline {
   display: inline-block;
-  font-size: 11.5px;
+  font-size: 11px;
   font-weight: 500;
   color: var(--tag-fg);
   background: var(--tag-bg);
-  padding: 1px 7px;
+  padding: 1px 6px;
   border-radius: 3px;
-  margin-top: 5px;
+  margin-left: 6px;
   letter-spacing: 0.01em;
+  vertical-align: 1px;
 }
 
 ul.pubs .links-inline {
-  display: block;
-  font-size: 12.5px;
+  display: inline;
+  font-size: 12px;
   color: var(--muted);
-  margin-top: 4px;
+  margin-left: 6px;
 }
 
 ul.pubs .links-inline a {
@@ -270,7 +276,7 @@ ul.projects {
 }
 
 ul.projects li {
-  padding: 10px 0;
+  padding: 5px 0;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -278,29 +284,30 @@ ul.projects li:last-child { border-bottom: none; }
 
 ul.projects .title {
   display: block;
-  font-size: 15.5px;
+  font-size: 14.5px;
   font-weight: 500;
   color: var(--ink);
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
 
 ul.projects .title:hover { color: var(--accent); border: none; }
 
 ul.projects .desc {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--body);
+  line-height: 1.5;
 }
 
 /* ---- Footer ---- */
 footer {
   width: 270px;
   position: fixed;
-  bottom: 12px;
-  left: 50px;
+  bottom: 10px;
+  left: 40px;
 }
 
-footer small { color: var(--muted); font-size: 12px; }
+footer small { color: var(--muted); font-size: 11.5px; }
 
 /* ---- Reset of legacy gimmicks ---- */
 .hiddenimg, img.filler, button.btn-circle, .hide-button { display: none !important; }
@@ -308,14 +315,14 @@ footer small { color: var(--muted); font-size: 12px; }
 
 /* ---- Responsive overrides ---- */
 @media print, screen and (max-width: 960px) {
-  body { padding: 30px; }
+  body { padding: 25px; }
   section.main { float: none; }
-  footer { position: static; width: auto; margin-top: 30px; left: auto; }
+  footer { position: static; width: auto; margin-top: 24px; left: auto; }
   ul.pubs li { padding-left: 0; min-height: 0; }
   ul.pubs .venue { position: static; width: auto; display: inline-block; margin-right: 8px; }
 }
 
 @media print, screen and (max-width: 720px) {
-  body { padding: 20px; }
+  body { padding: 18px; }
   ul.news .date { display: block; width: auto; }
 }
