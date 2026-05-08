@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/zhiyang.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
@@ -25,23 +25,23 @@
           <li><a href="https://scholar.google.com/citations?user=lp8MBNwAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
           <li><a href="https://github.com/hzyjerry"><i class="fab fa-github"></i> GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/zhiyanghe/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-          <li><a href="https://twitter.com/_herobotics_"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://x.com/_herobotics_"><i class="fab fa-x-twitter"></i> X</a></li>
         </ul>
-        <p class="view">I work on building AI systems that understand, adapt to, and stay aligned with the people they serve. Off the clock I enjoy coffee, music, running, basketball, and Jiu-Jitsu.</p>
+        <p class="view">I work on building AI systems that understand, adapt to, and stay aligned with the people they serve. Off the clock I enjoy coffee, music, running, and basketball.</p>
       </header>
 
       <section class="main">
         <section>
           <h1>About</h1>
           <p>
-            I am a Research Scientist at ByteDance Seed, working on
-            post-training and personalization for large language models.
-            I received my Ph.D. in EECS from <b>UC Berkeley</b> (graduated
-            Dec 2024), advised by
+            I am a Research Scientist at ByteDance Seed working on
+            post-training and large-scale RL for LLMs.
+            I received my Ph.D. in EECS from <b>UC Berkeley</b> (Dec 2024),
+            where I had the privilege of being advised by
             <a href="https://people.eecs.berkeley.edu/~anca/">Prof. Anca Dragan</a>
             in the <a href="https://interact.berkeley.edu/">InterACT Lab</a>.
             Before Berkeley I was at <b>Stanford</b> (class of 2018), where
-            I worked with
+            I was fortunate to work with
             <a href="https://www.epfl.ch/labs/vilab/">Amir Zamir</a>,
             <a href="http://cvgl.stanford.edu/silvio/">Silvio Savarese</a>, and
             <a href="http://dorsa.fyi/">Dorsa Sadigh</a> at
@@ -49,43 +49,33 @@
             <a href="https://dorsa.fyi/research-group/">ILIAD</a>.
           </p>
           <p>
-            I'm interested in making digital and physical agents more
-            powerful, reliable, and safely aligned. Currently I'm focused on
-            <b>agentic systems</b>,
-            <b>reasoning models</b>,
-            <b>efficient large language models</b>, and
-            <b>RL with verifiable rewards (RLVR)</b>.
+            I'm interested in making digital and physical agents
+            <b>more powerful, reliable, and safely aligned</b>.
+            Currently I'm focused on
+            agentic systems,
+            reasoning models,
+            efficient large language models, and
+            RL with verifiable rewards (RLVR).
             At ByteDance Seed I've contributed to
             <a href="https://github.com/ByteDance-Seed/seed-oss">Seed-OSS</a>
             and the Seed-Thinking series
             (<a href="https://arxiv.org/abs/2504.13914">v1.5</a>,
             <a href="https://seed.bytedance.com/en/seed1_6">v1.6</a>,
-            <a href="https://seed.bytedance.com/en/seed2">v2.0</a>, and beyond).
+            <a href="https://seed.bytedance.com/en/seed2">v2.0</a>, and beyond 👀).
           </p>
           <p>
             During my Ph.D., I worked on the safety of human&ndash;robot
             systems from three angles:
-            (1)&nbsp;<b>causal confusion</b> &mdash; how learned reward models
+            (1)&nbsp;<a href="#pub-causal-confusion" class="theme-link">causal confusion</a> &mdash; how learned reward models
             latch onto spurious correlates of human preference, and how to
             diagnose it;
-            (2)&nbsp;<b>adversarial perturbations</b> &mdash; quantifying
+            (2)&nbsp;<a href="#pub-adversarial" class="theme-link">adversarial perturbations</a> &mdash; quantifying
             robustness of assistive policies along a natural&ndash;adversarial
             frontier; and
-            (3)&nbsp;<b>steerability</b> &mdash; making model behavior
+            (3)&nbsp;<a href="#pub-steerability" class="theme-link">steerability</a> &mdash; making model behavior
             controllable and personalizable at inference time without
             retraining.
           </p>
-        </section>
-
-        <section>
-          <h1>News</h1>
-          <ul class="news">
-            <li><span class="date">Aug 2025</span> <i>Seed-OSS-36B</i> released open-source under Apache-2.0.</li>
-            <li><span class="date">Apr 2025</span> <i>Seed1.5-Thinking</i> tech report on arXiv.</li>
-            <li><span class="date">Jan 2025</span> <i>Context Steering</i> accepted at ICLR 2025.</li>
-            <li><span class="date">Aug 2023</span> <i>Quantifying Assistive Robustness</i> accepted at CoRL 2023.</li>
-            <li><span class="date">Jan 2023</span> <i>Causal Confusion in Preference-Based Reward Learning</i> accepted at ICLR 2023.</li>
-          </ul>
         </section>
 
         <section>
@@ -134,19 +124,19 @@
           <h1>Selected Publications</h1>
           <p class="hint"><a href="https://scholar.google.com/citations?user=lp8MBNwAAAAJ&hl=en">Full list on Google Scholar</a> &middot; * indicates equal contribution</p>
           <ul class="pubs">
-            <li>
+            <li id="pub-steerability">
               <span class="venue">2025</span>
               <a href="https://openreview.net/forum?id=8GXfoG9b6c" class="title">Context Steering: Controllable Personalization at Inference Time</a>
               <span class="authors"><b>Jerry Zhi-Yang He</b>, Sashrika Pandey, Mariah L. Schrum, Anca Dragan</span>
               <span class="venue-inline">ICLR 2025</span>
             </li>
-            <li>
+            <li id="pub-adversarial">
               <span class="venue">2023</span>
               <a href="https://proceedings.mlr.press/v229/he23a.html" class="title">Quantifying Assistive Robustness Via the Natural-Adversarial Frontier</a>
               <span class="authors"><b>Jerry Zhi-Yang He</b>, Daniel S. Brown, Zackory Erickson, Anca Dragan</span>
               <span class="venue-inline">CoRL 2023</span>
             </li>
-            <li>
+            <li id="pub-causal-confusion">
               <span class="venue">2023</span>
               <a href="https://openreview.net/forum?id=R0Xxvr_X3ZA" class="title">Causal Confusion and Reward Misidentification in Preference-Based Reward Learning</a>
               <span class="authors">Jeremy Tien, <b>Jerry Zhi-Yang He</b>, Zackory Erickson, Anca Dragan, Daniel S. Brown</span>
@@ -163,6 +153,17 @@
               <a href="https://proceedings.mlr.press/v164/he22a.html" class="title">Assisted Robust Reward Design</a>
               <span class="authors"><b>Jerry Zhi-Yang He</b>, Anca Dragan</span>
               <span class="venue-inline">CoRL 2021</span>
+            </li>
+            <li>
+              <span class="venue">2019</span>
+              <a href="https://3dscenegraph.stanford.edu/" class="title">3D Scene Graph: A Structure for Unified Semantics, 3D Space, and Camera</a>
+              <span class="authors">Iro Armeni, <b>Zhi-Yang He</b>, JunYoung Gwak, Amir R. Zamir, Martin Fischer, Jitendra Malik, Silvio Savarese</span>
+              <span class="venue-inline">ICCV 2019</span>
+              <span class="links-inline">
+                [<a href="https://3dscenegraph.stanford.edu/">website</a>]
+                [<a href="https://github.com/StanfordVL/3DSceneGraph">code</a>]
+                [<a href="https://arxiv.org/abs/1910.02527">paper</a>]
+              </span>
             </li>
             <li>
               <span class="venue">2018</span>

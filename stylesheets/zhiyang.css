@@ -61,6 +61,27 @@ p:last-child { margin-bottom: 0; }
 
 b { color: var(--ink); }
 
+a.theme-link {
+  color: var(--ink);
+  font-weight: 600;
+  border-bottom: 1px dotted var(--muted);
+}
+
+a.theme-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+ul.pubs li:target {
+  background: #fff7ed;
+  animation: pubFlash 1.4s ease-out;
+}
+
+@keyframes pubFlash {
+  0%   { background: #ffe6c8; }
+  100% { background: #fff7ed; }
+}
+
 /* ---- Header (sidebar) ---- */
 header h4 {
   font-size: 23px;
