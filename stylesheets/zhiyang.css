@@ -1,16 +1,16 @@
-/* ---- Tokens (slate + warm-orange palette) ---- */
+/* ---- Tokens (cool slate base with warm-orange pop, Stripe-style) ---- */
 :root {
   --ink: #1c2128;
   --body: #3e4750;
   --muted: #8a949c;
   --rule: #e3e6ea;
-  --accent: #b85a1e;
-  --accent-hover: #d27536;
-  --bg: #f7f8fa;
+  --accent: #e07a2c;
+  --accent-hover: #f29044;
+  --bg: #f6f8fb;
   --venue: #9aa3ab;
-  --tag-bg: #ebeef2;
-  --tag-fg: #4a5560;
-  --highlight: #b85a1e;
+  --tag-bg: #eaeef3;
+  --tag-fg: #44505c;
+  --highlight: #e07a2c;
 }
 
 /* ---- Base ---- */
