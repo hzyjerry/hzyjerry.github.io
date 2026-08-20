@@ -264,6 +264,11 @@ ul.pubs .authors {
   line-height: 1.4;
 }
 
+ul.pubs .authors i {
+  color: var(--ink);
+  font-style: italic;
+}
+
 ul.pubs .venue-inline {
   display: inline-block;
   font-size: 11px;
